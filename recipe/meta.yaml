@@ -31,14 +31,11 @@ requirements:
 
 test:
   files:
-    - ice_skating.py
-    - male1.txt
-    - import_test.py
-    - test.sh
+    - tests/
   commands:
-    - bash test.sh  # [linux]
-    - python ice_skating.py  # [osx or win]
-    - python import_test.py  # [osx or win]
+    #- bash tests/test.sh  # [linux]
+    - python tests/ice_skating.py  # [osx or win]
+    - python tests/import_test.py  # [osx or win]
 
 about:
   home: https://github.com/chrisdembia/yeadon/
