@@ -12,14 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1003
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1004
+  script: "{{ PYTHON }} -m pip install . -vv"
+  noarch: python
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
-
   run:
     - python
     - numpy >=1.6.1
