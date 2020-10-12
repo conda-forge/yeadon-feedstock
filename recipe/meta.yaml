@@ -19,6 +19,7 @@ requirements:
   host:
     - python
     - setuptools
+    - pip
   run:
     - python
     - numpy >=1.6.1
