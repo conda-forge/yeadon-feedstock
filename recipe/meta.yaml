@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     - python
-    - setuptools >=44.0.0
+    - setuptools >=44.1.1
     - pip
   run:
     - python
-    - numpy >=1.16.5
-    - pyyaml >=5.3.1
+    - numpy >=1.21.5
+    - pyyaml >=5.4.1
   run_constrained:
     - mayavi >=4.7.1
 
