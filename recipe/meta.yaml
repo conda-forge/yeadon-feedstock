@@ -1,6 +1,6 @@
 {% set name = "yeadon" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "b46a94ef3871aac90e4dca660cbf68df7ef207f46641a0a5d80a5e8fc88e5753" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "3bd50c5eecd41410eebda88d45332385817f9284b30b2866ca5cd21503623867" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
