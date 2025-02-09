@@ -14,6 +14,7 @@ source:
 build:
   number: 2
   script: "{{ PYTHON }} -m pip install -vv --no-deps --no-build-isolation ."
+  noarch: python
 
 requirements:
   host:
