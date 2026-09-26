@@ -1,6 +1,6 @@
 {% set name = "yeadon" %}
-{% set version = "1.5.0" %}
-{% set sha256 = "3bd50c5eecd41410eebda88d45332385817f9284b30b2866ca5cd21503623867" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "d97469e37bcebb66dab941bba042f9c7b224f996d0bbcf3cca74efc2682bcea2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,25 +8,25 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install -vv --no-deps --no-build-isolation ."
   noarch: python
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=44.1.1
+    - setuptools >=68.1.2
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=1.21.5
-    - pyyaml >=5.4.1
+    - numpy >=1.26.4
+    - pyyaml >=6.0.1
   run_constrained:
-    - mayavi >=4.7.1
+    - mayavi >=4.8.1
 
 test:
   requires:
