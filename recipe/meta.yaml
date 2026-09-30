@@ -1,6 +1,6 @@
 {% set name = "yeadon" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "d97469e37bcebb66dab941bba042f9c7b224f996d0bbcf3cca74efc2682bcea2" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "39c936bbc3b243f54f87c91ba1813d3006d90f198d42234ede9662c6bbafe94d" %}
 
 package:
   name: {{ name|lower }}
